@@ -10,4 +10,6 @@
 
 @interface MMTabBarViewController : UITabBarController
 
++ (instancetype)tabBarViewController;
+
 @end

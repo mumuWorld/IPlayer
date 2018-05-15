@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XP1-hY-S6Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -193,12 +193,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="wwc-Au-98C" kind="relationship" relationship="rootViewController" id="8YI-dc-ehm"/>
+                        <segue destination="OKA-kc-eZc" kind="relationship" relationship="rootViewController" id="8YI-dc-ehm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOp-6Y-gRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156" y="-656"/>
+        </scene>
+        <!--Home PageVC-->
+        <scene sceneID="tc7-Ny-cVH">
+            <objects>
+                <viewController storyboardIdentifier="MMHomePageVC" id="OKA-kc-eZc" customClass="MMHomePageVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VKD-Fb-17j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QRT-mz-brW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sll-sX-CDk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPf-Md-sJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="-681"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="g7s-l3-Xft">
@@ -218,16 +234,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbb-El-L8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="201.59999999999999" y="20.689655172413794"/>
-        </scene>
-        <!--MMHomePageVC-->
-        <scene sceneID="YCs-ja-Cq0">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MMHomePageVC" storyboardName="MMHomePageVC" referencedIdentifier="MMHomePageVC" id="wwc-Au-98C" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Vs2-7l-EQu"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgu-OA-Kg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="617" y="-681"/>
         </scene>
     </scenes>
 </document>

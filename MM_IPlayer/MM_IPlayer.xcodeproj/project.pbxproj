@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B435E63020AB3F0600712928 /* MMHomeNavigationC.m in Sources */ = {isa = PBXBuildFile; fileRef = B435E62F20AB3F0600712928 /* MMHomeNavigationC.m */; };
+		B435E63320AB3F2700712928 /* MMHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B435E63220AB3F2700712928 /* MMHomePageVC.m */; };
+		B435E63920AB42CD00712928 /* MMHomePageVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B435E63820AB42CD00712928 /* MMHomePageVC.storyboard */; };
 		B4D67EC720AB37060060E35F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D67EC620AB37060060E35F /* AppDelegate.m */; };
 		B4D67ECD20AB37060060E35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D67ECB20AB37060060E35F /* Main.storyboard */; };
 		B4D67ECF20AB37060060E35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D67ECE20AB37060060E35F /* Assets.xcassets */; };
 		B4D67ED220AB37060060E35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D67ED020AB37060060E35F /* LaunchScreen.storyboard */; };
 		B4D67ED520AB37060060E35F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D67ED420AB37060060E35F /* main.m */; };
 		B4D67EDD20AB38C40060E35F /* MMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D67EDC20AB38C40060E35F /* MMTabBarViewController.m */; };
+		B4D67EE120AB3C2E0060E35F /* MMBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D67EE020AB3C2E0060E35F /* MMBaseNavigationController.m */; };
+		B4D67F0920AB3E5B0060E35F /* MMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D67F0820AB3E5B0060E35F /* MMBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B435E62E20AB3F0600712928 /* MMHomeNavigationC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMHomeNavigationC.h; sourceTree = "<group>"; };
+		B435E62F20AB3F0600712928 /* MMHomeNavigationC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHomeNavigationC.m; sourceTree = "<group>"; };
+		B435E63120AB3F2700712928 /* MMHomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMHomePageVC.h; sourceTree = "<group>"; };
+		B435E63220AB3F2700712928 /* MMHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHomePageVC.m; sourceTree = "<group>"; };
+		B435E63820AB42CD00712928 /* MMHomePageVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMHomePageVC.storyboard; sourceTree = "<group>"; };
 		B4D67EC220AB37060060E35F /* MM_IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MM_IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D67EC520AB37060060E35F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4D67EC620AB37060060E35F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +36,10 @@
 		B4D67ED420AB37060060E35F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4D67EDB20AB38C40060E35F /* MMTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTabBarViewController.h; sourceTree = "<group>"; };
 		B4D67EDC20AB38C40060E35F /* MMTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTabBarViewController.m; sourceTree = "<group>"; };
+		B4D67EDF20AB3C2E0060E35F /* MMBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBaseNavigationController.h; sourceTree = "<group>"; };
+		B4D67EE020AB3C2E0060E35F /* MMBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBaseNavigationController.m; sourceTree = "<group>"; };
+		B4D67F0720AB3E5B0060E35F /* MMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBaseViewController.h; sourceTree = "<group>"; };
+		B4D67F0820AB3E5B0060E35F /* MMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,12 @@
 		B4D67EC420AB37060060E35F /* MM_IPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B4D67EFF20AB3E310060E35F /* 首页2 */,
+				B4D67F0320AB3E310060E35F /* 首页3 */,
+				B4D67EFB20AB3E310060E35F /* 首页4 */,
+				B4D67EF720AB3E310060E35F /* 首页5 */,
+				B4D67EE720AB3DAE0060E35F /* 首页 */,
+				B4D67EDE20AB3BFF0060E35F /* BaseController */,
 				B4D67EC520AB37060060E35F /* AppDelegate.h */,
 				B4D67EC620AB37060060E35F /* AppDelegate.m */,
 				B4D67EDB20AB38C40060E35F /* MMTabBarViewController.h */,
@@ -69,6 +89,177 @@
 				B4D67ED420AB37060060E35F /* main.m */,
 			);
 			path = MM_IPlayer;
+			sourceTree = "<group>";
+		};
+		B4D67EDE20AB3BFF0060E35F /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D67EDF20AB3C2E0060E35F /* MMBaseNavigationController.h */,
+				B4D67EE020AB3C2E0060E35F /* MMBaseNavigationController.m */,
+				B4D67F0720AB3E5B0060E35F /* MMBaseViewController.h */,
+				B4D67F0820AB3E5B0060E35F /* MMBaseViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		B4D67EE720AB3DAE0060E35F /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				B4D67EEA20AB3DD30060E35F /* model */,
+				B4D67EE920AB3DCB0060E35F /* view */,
+				B4D67EE820AB3DBF0060E35F /* controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		B4D67EE820AB3DBF0060E35F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B435E62E20AB3F0600712928 /* MMHomeNavigationC.h */,
+				B435E62F20AB3F0600712928 /* MMHomeNavigationC.m */,
+				B435E63120AB3F2700712928 /* MMHomePageVC.h */,
+				B435E63220AB3F2700712928 /* MMHomePageVC.m */,
+				B435E63820AB42CD00712928 /* MMHomePageVC.storyboard */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B4D67EE920AB3DCB0060E35F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B4D67EEA20AB3DD30060E35F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B4D67EF720AB3E310060E35F /* 首页5 */ = {
+			isa = PBXGroup;
+			children = (
+				B4D67EF820AB3E310060E35F /* controller */,
+				B4D67EF920AB3E310060E35F /* model */,
+				B4D67EFA20AB3E310060E35F /* view */,
+			);
+			path = "首页5";
+			sourceTree = "<group>";
+		};
+		B4D67EF820AB3E310060E35F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B4D67EF920AB3E310060E35F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B4D67EFA20AB3E310060E35F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B4D67EFB20AB3E310060E35F /* 首页4 */ = {
+			isa = PBXGroup;
+			children = (
+				B4D67EFC20AB3E310060E35F /* controller */,
+				B4D67EFD20AB3E310060E35F /* model */,
+				B4D67EFE20AB3E310060E35F /* view */,
+			);
+			path = "首页4";
+			sourceTree = "<group>";
+		};
+		B4D67EFC20AB3E310060E35F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B4D67EFD20AB3E310060E35F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B4D67EFE20AB3E310060E35F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B4D67EFF20AB3E310060E35F /* 首页2 */ = {
+			isa = PBXGroup;
+			children = (
+				B4D67F0020AB3E310060E35F /* controller */,
+				B4D67F0120AB3E310060E35F /* model */,
+				B4D67F0220AB3E310060E35F /* view */,
+			);
+			path = "首页2";
+			sourceTree = "<group>";
+		};
+		B4D67F0020AB3E310060E35F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B4D67F0120AB3E310060E35F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B4D67F0220AB3E310060E35F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B4D67F0320AB3E310060E35F /* 首页3 */ = {
+			isa = PBXGroup;
+			children = (
+				B4D67F0420AB3E310060E35F /* controller */,
+				B4D67F0520AB3E310060E35F /* model */,
+				B4D67F0620AB3E310060E35F /* view */,
+			);
+			path = "首页3";
+			sourceTree = "<group>";
+		};
+		B4D67F0420AB3E310060E35F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B4D67F0520AB3E310060E35F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B4D67F0620AB3E310060E35F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +324,7 @@
 				B4D67ED220AB37060060E35F /* LaunchScreen.storyboard in Resources */,
 				B4D67ECF20AB37060060E35F /* Assets.xcassets in Resources */,
 				B4D67ECD20AB37060060E35F /* Main.storyboard in Resources */,
+				B435E63920AB42CD00712928 /* MMHomePageVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D67ED520AB37060060E35F /* main.m in Sources */,
+				B4D67F0920AB3E5B0060E35F /* MMBaseViewController.m in Sources */,
+				B4D67EE120AB3C2E0060E35F /* MMBaseNavigationController.m in Sources */,
 				B4D67EDD20AB38C40060E35F /* MMTabBarViewController.m in Sources */,
+				B435E63320AB3F2700712928 /* MMHomePageVC.m in Sources */,
+				B435E63020AB3F0600712928 /* MMHomeNavigationC.m in Sources */,
 				B4D67EC720AB37060060E35F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

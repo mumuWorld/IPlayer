@@ -1,27 +1,18 @@
 //
-//  MMTabBarViewController.m
+//  MMNavigationController.m
 //  MM_IPlayer
 //
-//  Created by MM on 2018/5/15.
+//  Created by MM on 2018/5/16.
 //  Copyright © 2018年 MM. All rights reserved.
 //
 
-#import "MMTabBarViewController.h"
-#import "MMHomeNavigationC.h"
+#import "MMBaseNavigationController.h"
 
-@interface MMTabBarViewController ()
+@interface MMBaseNavigationController ()
 
 @end
 
-@implementation MMTabBarViewController
-
-+ (instancetype)tabBarViewController
-{
-    UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    MMTabBarViewController *mainTabVC = [board instantiateViewControllerWithIdentifier:@"MMTabBarViewController"];
-//    [mainTabVC addChildViewController:[MMHomeNavigationC homeNavigationController]];
-    return mainTabVC;
-}
+@implementation MMBaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

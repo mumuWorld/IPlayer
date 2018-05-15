@@ -1,30 +1,22 @@
 //
-//  MMTabBarViewController.m
+//  MMHomePageVC.m
 //  MM_IPlayer
 //
-//  Created by MM on 2018/5/15.
+//  Created by MM on 2018/5/16.
 //  Copyright © 2018年 MM. All rights reserved.
 //
 
-#import "MMTabBarViewController.h"
-#import "MMHomeNavigationC.h"
+#import "MMHomePageVC.h"
 
-@interface MMTabBarViewController ()
+@interface MMHomePageVC ()
 
 @end
 
-@implementation MMTabBarViewController
-
-+ (instancetype)tabBarViewController
-{
-    UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    MMTabBarViewController *mainTabVC = [board instantiateViewControllerWithIdentifier:@"MMTabBarViewController"];
-//    [mainTabVC addChildViewController:[MMHomeNavigationC homeNavigationController]];
-    return mainTabVC;
-}
+@implementation MMHomePageVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
 }
 
