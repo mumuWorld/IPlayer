@@ -10,6 +10,19 @@
 		B435E63020AB3F0600712928 /* MMHomeNavigationC.m in Sources */ = {isa = PBXBuildFile; fileRef = B435E62F20AB3F0600712928 /* MMHomeNavigationC.m */; };
 		B435E63320AB3F2700712928 /* MMHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B435E63220AB3F2700712928 /* MMHomePageVC.m */; };
 		B435E63920AB42CD00712928 /* MMHomePageVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B435E63820AB42CD00712928 /* MMHomePageVC.storyboard */; };
+		B4A99C9A20AFD1E10026E737 /* MMManageMusicFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99C9920AFD1E10026E737 /* MMManageMusicFile.m */; };
+		B4A99C9D20AFD2780026E737 /* MMMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99C9C20AFD2780026E737 /* MMMusicModel.m */; };
+		B4A99CA020AFD4520026E737 /* NSDictionary+MMSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99C9F20AFD4520026E737 /* NSDictionary+MMSafeCategory.m */; };
+		B4A99CA220AFFCC70026E737 /* MMDefine.h in Sources */ = {isa = PBXBuildFile; fileRef = B4A99CA120AFFCC70026E737 /* MMDefine.h */; };
+		B4A99CA720B003560026E737 /* MMMusicFileTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99CA520B003560026E737 /* MMMusicFileTVCell.m */; };
+		B4A99CA820B003560026E737 /* MMMusicFileTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A99CA620B003560026E737 /* MMMusicFileTVCell.xib */; };
+		B4A99CAB20B009570026E737 /* NSObject+MMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99CAA20B009570026E737 /* NSObject+MMCategory.m */; };
+		B4A99CAE20B011DF0026E737 /* MMMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99CAD20B011DF0026E737 /* MMMusicPlayer.m */; };
+		B4A99CB220B0273B0026E737 /* MMPlayerViewCon.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A99CB020B0273B0026E737 /* MMPlayerViewCon.m */; };
+		B4A99CB320B0273B0026E737 /* MMPlayerViewCon.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A99CB120B0273B0026E737 /* MMPlayerViewCon.xib */; };
+		B4D15AA720AC806F0063FB61 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D15AA620AC806F0063FB61 /* libz.tbd */; };
+		B4D15AA920AC80780063FB61 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D15AA820AC80780063FB61 /* libbz2.tbd */; };
+		B4D15AAB20AC80800063FB61 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D15AAA20AC80800063FB61 /* libiconv.tbd */; };
 		B4D67EC720AB37060060E35F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D67EC620AB37060060E35F /* AppDelegate.m */; };
 		B4D67ECD20AB37060060E35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D67ECB20AB37060060E35F /* Main.storyboard */; };
 		B4D67ECF20AB37060060E35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D67ECE20AB37060060E35F /* Assets.xcassets */; };
@@ -26,6 +39,27 @@
 		B435E63120AB3F2700712928 /* MMHomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMHomePageVC.h; sourceTree = "<group>"; };
 		B435E63220AB3F2700712928 /* MMHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHomePageVC.m; sourceTree = "<group>"; };
 		B435E63820AB42CD00712928 /* MMHomePageVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMHomePageVC.storyboard; sourceTree = "<group>"; };
+		B4A99C9820AFD1E10026E737 /* MMManageMusicFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMManageMusicFile.h; sourceTree = "<group>"; };
+		B4A99C9920AFD1E10026E737 /* MMManageMusicFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMManageMusicFile.m; sourceTree = "<group>"; };
+		B4A99C9B20AFD2780026E737 /* MMMusicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMusicModel.h; sourceTree = "<group>"; };
+		B4A99C9C20AFD2780026E737 /* MMMusicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMusicModel.m; sourceTree = "<group>"; };
+		B4A99C9E20AFD4520026E737 /* NSDictionary+MMSafeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MMSafeCategory.h"; sourceTree = "<group>"; };
+		B4A99C9F20AFD4520026E737 /* NSDictionary+MMSafeCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MMSafeCategory.m"; sourceTree = "<group>"; };
+		B4A99CA120AFFCC70026E737 /* MMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDefine.h; sourceTree = "<group>"; };
+		B4A99CA320AFFD610026E737 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = MM_IPlayer/Utils/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		B4A99CA420B003560026E737 /* MMMusicFileTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMusicFileTVCell.h; sourceTree = "<group>"; };
+		B4A99CA520B003560026E737 /* MMMusicFileTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMusicFileTVCell.m; sourceTree = "<group>"; };
+		B4A99CA620B003560026E737 /* MMMusicFileTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMMusicFileTVCell.xib; sourceTree = "<group>"; };
+		B4A99CA920B009570026E737 /* NSObject+MMCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MMCategory.h"; sourceTree = "<group>"; };
+		B4A99CAA20B009570026E737 /* NSObject+MMCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MMCategory.m"; sourceTree = "<group>"; };
+		B4A99CAC20B011DF0026E737 /* MMMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMusicPlayer.h; sourceTree = "<group>"; };
+		B4A99CAD20B011DF0026E737 /* MMMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMusicPlayer.m; sourceTree = "<group>"; };
+		B4A99CAF20B0273B0026E737 /* MMPlayerViewCon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPlayerViewCon.h; sourceTree = "<group>"; };
+		B4A99CB020B0273B0026E737 /* MMPlayerViewCon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPlayerViewCon.m; sourceTree = "<group>"; };
+		B4A99CB120B0273B0026E737 /* MMPlayerViewCon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMPlayerViewCon.xib; sourceTree = "<group>"; };
+		B4D15AA620AC806F0063FB61 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B4D15AA820AC80780063FB61 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		B4D15AAA20AC80800063FB61 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		B4D67EC220AB37060060E35F /* MM_IPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MM_IPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D67EC520AB37060060E35F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4D67EC620AB37060060E35F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,17 +81,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D15AAB20AC80800063FB61 /* libiconv.tbd in Frameworks */,
+				B4D15AA920AC80780063FB61 /* libbz2.tbd in Frameworks */,
+				B4D15AA720AC806F0063FB61 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4A99C9620AFD1360026E737 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B4A99CA320AFFD610026E737 /* PrefixHeader.pch */,
+				B4A99C9E20AFD4520026E737 /* NSDictionary+MMSafeCategory.h */,
+				B4A99C9F20AFD4520026E737 /* NSDictionary+MMSafeCategory.m */,
+				B4A99CA120AFFCC70026E737 /* MMDefine.h */,
+				B4A99CA920B009570026E737 /* NSObject+MMCategory.h */,
+				B4A99CAA20B009570026E737 /* NSObject+MMCategory.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B4A99C9720AFD14B0026E737 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				B4A99C9820AFD1E10026E737 /* MMManageMusicFile.h */,
+				B4A99C9920AFD1E10026E737 /* MMManageMusicFile.m */,
+				B4A99CAC20B011DF0026E737 /* MMMusicPlayer.h */,
+				B4A99CAD20B011DF0026E737 /* MMMusicPlayer.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		B4D15A1E20AC80290063FB61 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B4D15A1F20AC80350063FB61 /* framework */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B4D15A1F20AC80350063FB61 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		B4D15AA520AC806F0063FB61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4D15AAA20AC80800063FB61 /* libiconv.tbd */,
+				B4D15AA820AC80780063FB61 /* libbz2.tbd */,
+				B4D15AA620AC806F0063FB61 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4D67EB920AB37060060E35F = {
 			isa = PBXGroup;
 			children = (
 				B4D67EC420AB37060060E35F /* MM_IPlayer */,
 				B4D67EC320AB37060060E35F /* Products */,
+				B4D15AA520AC806F0063FB61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +159,8 @@
 		B4D67EC420AB37060060E35F /* MM_IPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B4A99C9620AFD1360026E737 /* Utils */,
+				B4D15A1E20AC80290063FB61 /* Other */,
 				B4D67EFF20AB3E310060E35F /* 首页2 */,
 				B4D67F0320AB3E310060E35F /* 首页3 */,
 				B4D67EFB20AB3E310060E35F /* 首页4 */,
@@ -105,6 +194,7 @@
 		B4D67EE720AB3DAE0060E35F /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				B4A99C9720AFD14B0026E737 /* Player */,
 				B4D67EEA20AB3DD30060E35F /* model */,
 				B4D67EE920AB3DCB0060E35F /* view */,
 				B4D67EE820AB3DBF0060E35F /* controller */,
@@ -127,6 +217,12 @@
 		B4D67EE920AB3DCB0060E35F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				B4A99CA420B003560026E737 /* MMMusicFileTVCell.h */,
+				B4A99CA520B003560026E737 /* MMMusicFileTVCell.m */,
+				B4A99CA620B003560026E737 /* MMMusicFileTVCell.xib */,
+				B4A99CAF20B0273B0026E737 /* MMPlayerViewCon.h */,
+				B4A99CB020B0273B0026E737 /* MMPlayerViewCon.m */,
+				B4A99CB120B0273B0026E737 /* MMPlayerViewCon.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -134,6 +230,8 @@
 		B4D67EEA20AB3DD30060E35F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B4A99C9B20AFD2780026E737 /* MMMusicModel.h */,
+				B4A99C9C20AFD2780026E737 /* MMMusicModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -323,7 +421,9 @@
 			files = (
 				B4D67ED220AB37060060E35F /* LaunchScreen.storyboard in Resources */,
 				B4D67ECF20AB37060060E35F /* Assets.xcassets in Resources */,
+				B4A99CA820B003560026E737 /* MMMusicFileTVCell.xib in Resources */,
 				B4D67ECD20AB37060060E35F /* Main.storyboard in Resources */,
+				B4A99CB320B0273B0026E737 /* MMPlayerViewCon.xib in Resources */,
 				B435E63920AB42CD00712928 /* MMHomePageVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,12 +436,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D67ED520AB37060060E35F /* main.m in Sources */,
+				B4A99C9D20AFD2780026E737 /* MMMusicModel.m in Sources */,
 				B4D67F0920AB3E5B0060E35F /* MMBaseViewController.m in Sources */,
+				B4A99C9A20AFD1E10026E737 /* MMManageMusicFile.m in Sources */,
 				B4D67EE120AB3C2E0060E35F /* MMBaseNavigationController.m in Sources */,
 				B4D67EDD20AB38C40060E35F /* MMTabBarViewController.m in Sources */,
+				B4A99CB220B0273B0026E737 /* MMPlayerViewCon.m in Sources */,
+				B4A99CAB20B009570026E737 /* NSObject+MMCategory.m in Sources */,
 				B435E63320AB3F2700712928 /* MMHomePageVC.m in Sources */,
+				B4A99CA720B003560026E737 /* MMMusicFileTVCell.m in Sources */,
 				B435E63020AB3F0600712928 /* MMHomeNavigationC.m in Sources */,
+				B4A99CAE20B011DF0026E737 /* MMMusicPlayer.m in Sources */,
+				B4A99CA220AFFCC70026E737 /* MMDefine.h in Sources */,
 				B4D67EC720AB37060060E35F /* AppDelegate.m in Sources */,
+				B4A99CA020AFD4520026E737 /* NSDictionary+MMSafeCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,9 +585,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8XKJWPYS5;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = /Users/mumu/Documents/Git_Pro/IPlayer_Pro/MM_IPlayer/MM_IPlayer/Utils/PrefixHeader.pch;
 				INFOPLIST_FILE = MM_IPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MuMu.MM-IPlayer";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MM_IPlayer/Other/framework/FFmpeg-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuMu.IPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,9 +605,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8XKJWPYS5;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = /Users/mumu/Documents/Git_Pro/IPlayer_Pro/MM_IPlayer/MM_IPlayer/Utils/PrefixHeader.pch;
 				INFOPLIST_FILE = MM_IPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MuMu.MM-IPlayer";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MM_IPlayer/Other/framework/FFmpeg-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuMu.IPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

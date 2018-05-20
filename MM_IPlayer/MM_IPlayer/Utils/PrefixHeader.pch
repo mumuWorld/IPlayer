@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  MM_IPlayer
+//
+//  Created by MM on 2018/5/19.
+//  Copyright © 2018年 MM. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MMDefine.h"
+#import "NSObject+MMCategory.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

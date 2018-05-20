@@ -8,7 +8,7 @@
 
 #import "MMBaseNavigationController.h"
 
-@interface MMBaseNavigationController ()
+@interface MMBaseNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -16,9 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupPopGestureRecognizer];
     // Do any additional setup after loading the view.
 }
-
+- (void)setupPopGestureRecognizer
+{
+//    self.interactivePopGestureRecognizer.delegate = self;
+    //    全屏滑动返回优化
+    UIPanGestureRecognizer *panGes = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:panGes];
+    panGes.delegate = self;
+    //    禁止自己的边缘手势
+    self.interactivePopGestureRecognizer.enabled = NO;
+}
+#pragma mark - ----------------------UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    return self.childViewControllers.count >1;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -10,6 +10,6 @@
 
 @interface MMHomeNavigationC : MMBaseNavigationController
 
-+ (instancetype)homeNavigationController;
+//+ (instancetype)homeNavigationController;
 
 @end
