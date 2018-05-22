@@ -13,22 +13,24 @@
 @interface MMMusicPlayer ()
 @property (nonatomic,strong) AVPlayer *mMusicPlayer;
 
+@property (nonatomic,assign) NSInteger currentIndex;
 @property (nonatomic,copy) NSString *currentPath;
+@property (nonatomic,strong) MMMusicModel *currentPlayModel;
 
 @property (nonatomic,strong) NSMutableArray *playerArray;
-@property (nonatomic,assign) NSInteger currentIndex;
-@property (nonatomic,strong) MMMusicModel *currentPlayModel;
+
+
 @end
 
 @implementation MMMusicPlayer
 static MMMusicPlayer *shareInstance = nil;
 
-+ (instancetype)defaultMusicPlayerWithMusicArray:(NSArray *)array
++ (instancetype)defaultMusicPlayer
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         shareInstance = [[self alloc] init];
-        [shareInstance setUpMusicPlayerWithArray:array];
+        [shareInstance setupMusicPlayer];
     });
     return shareInstance;
 }
@@ -43,16 +45,22 @@ static MMMusicPlayer *shareInstance = nil;
     });
     return shareInstance;
 }
-
-- (void)setUpMusicPlayerWithArray:(NSArray *)array
+- (void)setupMusicPlayer
 {
     self.mMusicPlayer = [[AVPlayer alloc] init];
-    self.playerArray =  [NSMutableArray arrayWithArray:array];
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:YES error:nil];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    [MM_NotificationCenter addObserver:self selector:@selector(nextObject) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    [MM_NotificationCenter addObserver:self selector:@selector(receivePlayEndNotify:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+}
+- (void)setUpPlayerArray:(NSArray *)array withPlayEndBlock:(MusicPlayEndBlock)handler
+{
+    self.playerArray =  [NSMutableArray arrayWithArray:array];
+    self.currentIndex = -1;
+    if (handler) {
+        self.playEndBlock = handler;
+    }
 }
 
 - (void)playerMusic
@@ -83,7 +91,7 @@ static MMMusicPlayer *shareInstance = nil;
 }
 - (void)nextMusicWithIndex:(NSInteger)index
 {
-    if (index ==self.currentIndex) {
+    if (index == self.currentIndex) {
         return;
     }
     self.currentPlayModel = self.playerArray[index];
@@ -98,5 +106,8 @@ static MMMusicPlayer *shareInstance = nil;
         self.currentIndex = 0;
     }
     [self nextMusicWithIndex:self.currentIndex];
+    if (self.playEndBlock) {
+        self.playEndBlock(self.currentIndex);
+    }
 }
 @end

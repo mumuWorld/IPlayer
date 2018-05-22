@@ -30,17 +30,24 @@
 + (instancetype)playerViewControllerWithArray:(NSMutableArray *)arr indexPath:(NSIndexPath *)indexPath
 {
     MMPlayerViewCon *playerVC = [[MMPlayerViewCon alloc] init];
-    playerVC.currentIndex = indexPath.row;
     playerVC.playerArray = arr;
-    playerVC.mMusicPlayer = [MMMusicPlayer defaultMusicPlayerWithMusicArray:playerVC.playerArray];
-
+    playerVC.mMusicPlayer = [MMMusicPlayer defaultMusicPlayer];
+    __weak typeof(playerVC) weakSelf = playerVC;
+    [playerVC.mMusicPlayer setUpPlayerArray:playerVC.playerArray withPlayEndBlock:^(NSInteger index) {
+        weakSelf.currentIndex = index;
+    }];
+    playerVC.currentIndex = indexPath.row;
+    
     return playerVC;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self startPlay];
     [self setupSubviews];
+}
+- (void)viewDidLayoutSubviews
+{
+    self.titleLabel.text = self.currentPlayModel.musicName;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -50,6 +57,7 @@
 - (void)startPlay{
     self.currentPlayModel = self.playerArray[self.currentIndex];
     [self.mMusicPlayer nextMusicWithIndex:self.currentIndex];
+    self.titleLabel.text = self.currentPlayModel.musicName;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -58,7 +66,11 @@
 - (void)setupSubviews
 {
     [self.pauseBtn setBackgroundImage:[UIImage imageNamed:@"播放"] forState:UIControlStateSelected];
-    self.titleLabel.text = self.currentPlayModel.musicName;
+    __weak typeof(self) weakSelf = self;
+    [self.mMusicPlayer setUpPlayerArray:self.playerArray withPlayEndBlock:^(NSInteger index) {
+        weakSelf.currentIndex = index;
+    }];
+
 }
 #pragma mark - ----------------------Target
 - (IBAction)lastBtnClick:(id)sender {

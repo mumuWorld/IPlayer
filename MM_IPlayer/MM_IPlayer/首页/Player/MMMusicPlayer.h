@@ -9,9 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+typedef void(^MusicPlayEndBlock)(NSInteger index);
+
+@class MMMusicModel;
 @interface MMMusicPlayer : NSObject
 
-+ (instancetype)defaultMusicPlayerWithMusicArray:(NSArray *)array;
+
+
+@property (nonatomic,assign) MusicPlayEndBlock playEndBlock;
+
++ (instancetype)defaultMusicPlayer;
+
+- (void)setUpPlayerArray:(NSArray *)array withPlayEndBlock:(MusicPlayEndBlock)handler;
 
 - (void)nextMusicWithPath:(NSString *)path;
 
