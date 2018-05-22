@@ -11,9 +11,11 @@
 
 @interface MMMusicPlayer : NSObject
 
-+ (instancetype)defaultMusicPlayer;
++ (instancetype)defaultMusicPlayerWithMusicArray:(NSArray *)array;
 
 - (void)nextMusicWithPath:(NSString *)path;
+
+- (void)nextMusicWithIndex:(NSInteger)index;
 
 - (void)pauseMusic;
 

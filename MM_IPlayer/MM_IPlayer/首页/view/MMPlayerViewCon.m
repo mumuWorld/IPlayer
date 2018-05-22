@@ -32,7 +32,7 @@
     MMPlayerViewCon *playerVC = [[MMPlayerViewCon alloc] init];
     playerVC.currentIndex = indexPath.row;
     playerVC.playerArray = arr;
-    playerVC.mMusicPlayer = [MMMusicPlayer defaultMusicPlayer];
+    playerVC.mMusicPlayer = [MMMusicPlayer defaultMusicPlayerWithMusicArray:playerVC.playerArray];
 
     return playerVC;
 }
@@ -49,7 +49,7 @@
 }
 - (void)startPlay{
     self.currentPlayModel = self.playerArray[self.currentIndex];
-    [self.mMusicPlayer nextMusicWithPath:self.currentPlayModel.storePathName];
+    [self.mMusicPlayer nextMusicWithIndex:self.currentIndex];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -58,6 +58,7 @@
 - (void)setupSubviews
 {
     [self.pauseBtn setBackgroundImage:[UIImage imageNamed:@"播放"] forState:UIControlStateSelected];
+    self.titleLabel.text = self.currentPlayModel.musicName;
 }
 #pragma mark - ----------------------Target
 - (IBAction)lastBtnClick:(id)sender {
@@ -79,7 +80,7 @@
 }
 - (IBAction)nextBtnClick:(id)sender {
     //判断是否是数组的最后
-    if (self.currentIndex == self.playerArray.count -1) {
+    if (self.currentIndex >= self.playerArray.count -1) {
         self.currentIndex = 0;
     } else {
         self.currentIndex += 1;

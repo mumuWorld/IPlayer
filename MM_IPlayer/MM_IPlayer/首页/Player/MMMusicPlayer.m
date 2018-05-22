@@ -8,22 +8,27 @@
 
 #import "MMMusicPlayer.h"
 #import <UIKit/UIKit.h>
+#import "MMMusicModel.h"
 
 @interface MMMusicPlayer ()
 @property (nonatomic,strong) AVPlayer *mMusicPlayer;
 
 @property (nonatomic,copy) NSString *currentPath;
+
+@property (nonatomic,strong) NSMutableArray *playerArray;
+@property (nonatomic,assign) NSInteger currentIndex;
+@property (nonatomic,strong) MMMusicModel *currentPlayModel;
 @end
 
 @implementation MMMusicPlayer
 static MMMusicPlayer *shareInstance = nil;
 
-+ (instancetype)defaultMusicPlayer
++ (instancetype)defaultMusicPlayerWithMusicArray:(NSArray *)array
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         shareInstance = [[self alloc] init];
-        [shareInstance setUpMusicPlayer];
+        [shareInstance setUpMusicPlayerWithArray:array];
     });
     return shareInstance;
 }
@@ -39,15 +44,15 @@ static MMMusicPlayer *shareInstance = nil;
     return shareInstance;
 }
 
-- (void)setUpMusicPlayer
+- (void)setUpMusicPlayerWithArray:(NSArray *)array
 {
     self.mMusicPlayer = [[AVPlayer alloc] init];
-    
+    self.playerArray =  [NSMutableArray arrayWithArray:array];
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:YES error:nil];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
-    
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [MM_NotificationCenter addObserver:self selector:@selector(nextObject) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
 }
 
 - (void)playerMusic
@@ -68,12 +73,30 @@ static MMMusicPlayer *shareInstance = nil;
         return;
     }
     self.currentPath = path;
+    [self playerMusicWithModelPath:path];
+}
+- (void)playerMusicWithModelPath:(NSString *)path
+{
     AVPlayerItem *item = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:path]];
     [self.mMusicPlayer replaceCurrentItemWithPlayerItem:item];
     [self playerMusic];
 }
-- (void)lastMusic
+- (void)nextMusicWithIndex:(NSInteger)index
 {
-    
+    if (index ==self.currentIndex) {
+        return;
+    }
+    self.currentPlayModel = self.playerArray[index];
+    self.currentIndex = index;
+    [self playerMusicWithModelPath:self.currentPlayModel.storePathName];
+}
+- (void)receivePlayEndNotify:(NSNotification *)notify
+{
+    self.currentIndex += 1;
+    //判断是否是数组的最后
+    if (self.currentIndex >= self.playerArray.count) {
+        self.currentIndex = 0;
+    }
+    [self nextMusicWithIndex:self.currentIndex];
 }
 @end

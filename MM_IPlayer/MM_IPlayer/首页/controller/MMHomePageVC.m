@@ -32,10 +32,10 @@ static NSString *reuseID = @"musTableView";
 {
     [self.view addSubview:self.musTableView];
 }
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO];
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
